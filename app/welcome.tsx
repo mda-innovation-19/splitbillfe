@@ -28,7 +28,7 @@ const WelcomeScreen = ({ navigation }: any) => {
   // Fungsi untuk Register
   const handleRegister = async () => {
     try {
-      const response = await fetch('http://127.0.0.1:8000/user/register', {
+      const response = await fetch('https://splitbillbe.fly.dev/user/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, fullname, password })
@@ -62,7 +62,7 @@ const WelcomeScreen = ({ navigation }: any) => {
   // Fungsi untuk Login
   const handleLogin = async () => {
     try {
-      const response = await fetch('http://127.0.0.1:8000/user/login', {
+      const response = await fetch('https://splitbillbe.fly.dev/user/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username: loginUsername, password: loginPassword })

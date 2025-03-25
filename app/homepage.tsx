@@ -152,48 +152,6 @@ const Homepage = () => {
     </VStack>
   );
 
-
-//   return (
-//     <ScrollView style={{ flex: 1, backgroundColor: "#f5f5f5" }}>
-//       <Box bg="#007bff" p={4}>
-//         <Image source={require("../assets/images/livin_mandiri_logo.png")} style={{ width: 100, height: 30 }} />
-//         {userData && (
-//           <Text style={{ color: "white", fontSize: 18, fontWeight: "bold" }}>
-//             Halo, {userData.fullname}
-//           </Text>
-//         )}
-//       </Box>
-//       <Box bg="white" p={4} m={4} borderRadius={10} shadow={2}>
-//         <HStack justifyContent="space-between" alignItems="center">
-//           <VStack>
-//             <Text style={{ fontSize: 16, fontWeight: "bold" }}>Tabungan Now IDR</Text>
-//             <Text style={{ fontSize: 24, fontWeight: "bold" }}>Rp {userData?.balance?.toLocaleString()}</Text>
-//           </VStack>
-//           <Image source={require("../assets/images/Kartu.png")} style={{ width: 50, height: 30 }} />
-//         </HStack>
-//       </Box>
-
-//       <Text style={{ fontSize: 18, fontWeight: "bold", marginLeft: 16 }}>Fitur Utama Anda</Text>
-//       <HStack justifyContent="space-around" m={4}>
-//         <VStack alignItems="center">
-//           <Image source={require("../assets/images/transfer-rupiah-button.png")} style={{ width: 50, height: 50 }} />
-//           <Text>Transfer Uang</Text>
-//         </VStack>
-//         <VStack alignItems="center">
-//           <Image source={require("../assets/images/topup-emoney-button.png")} style={{ width: 50, height: 50 }} />
-//           <Text>Isi Saldo E-Money</Text>
-//         </VStack>
-//         <VStack alignItems="center">
-//           <Image source={require("../assets/images/virtual-account-button.png")} style={{ width: 50, height: 50 }} />
-//           <Text>Bayar VA</Text>
-//         </VStack>
-//         <VStack alignItems="center">
-//           <Image source={require("../assets/images/topup-ewallet-button.png")} style={{ width: 50, height: 50 }} />
-//           <Text>Isi Saldo E-Wallet</Text>
-//         </VStack>
-//       </HStack>
-//     </ScrollView>
-//   );
 };
 
 export default Homepage;

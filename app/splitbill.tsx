@@ -13,7 +13,7 @@ export default function SplitBillScreen() {
 
   useEffect(() => {
     if (userData) {
-      fetch(`http://127.0.0.1:8000/bill/get_bill_by_user_id/${user.id}`)
+      fetch(`https://splitbillbe.fly.dev/bill/get_bill_by_user_id/${user.id}`)
         .then((res) => res.json())
         .then((data) => {
           setBillHistory(data);
@@ -98,14 +98,3 @@ export default function SplitBillScreen() {
     </ScrollView>
   );
 }
-
-//   return (
-//     <View>
-//       <Text>ID: {user?.id}</Text>
-//       <Text>Nama: {user?.fullname}</Text>
-//       <Text>Username: {user?.username}</Text>
-//       <Text>No Rekening: {user?.account_number}</Text>
-//       <Text>Saldo: Rp. {user?.balance}</Text>
-//     </View>
-//   );
-// } 
